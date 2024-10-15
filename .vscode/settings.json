@@ -1,0 +1,28 @@
+{
+  "editor.rulers": [99],
+
+  // performance
+  "files.exclude": {
+    "node_modules/**": true,
+  },
+  "files.watcherExclude": {
+    "node_modules/**": true,
+  },
+
+  // biome
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    }
+  },
+  "[json][jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit"
+    }
+  }
+}
